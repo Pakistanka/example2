@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/5ebe9ac00bb8ee8f65aa44d4_Inter.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/5ebe9ac00bb8ee6f47aa44d7_Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/5ebe9ac00bb8eea34baa44d1_Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Euclidcirculara';
+    src: url('https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/5ebe9ac00bb8ee4cc5aa44cf_EuclidCircularA-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Euclidcirculara';
+    src: url('https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/5ebe9ac00bb8eeead9aa44de_EuclidCircularA-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+  }
