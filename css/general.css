@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: Inter, sans-serif;
+    color: #2e2e2e;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+    list-style: none;
+}
