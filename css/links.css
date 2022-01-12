@@ -1,38 +1,35 @@
 .link {
-    /* color: #2175ff; */
-    cursor: pointer;
-    /* font-weight: 400; */
-    text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
 
-    font-family: Euclidcirculara, sans-serif;
-    color: #ff6f43;
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 500;
+  font-family: Euclidcirculara, sans-serif;
+  color: #ff6f43;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
 }
 .link--arrowed {
-    display: inline-block;
-    height: 2rem;
-    line-height: 2rem;
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
 }
 .link--arrowed .arrow-icon {
-    position: relative;
-    top: -1px;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-    vertical-align: middle;
+  position: relative;
+  top: -1px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  vertical-align: middle;
 }
 .link--arrowed .arrow-icon--circle {
-    transition: stroke-dashoffset 0.3s ease;
-    stroke-dasharray: 95;
-    stroke-dashoffset: 95;
+  transition: stroke-dashoffset 0.3s ease;
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
 }
 .link--arrowed:hover .arrow-icon {
-    transform: translate3d(5px, 0, 0);
+  transform: translate3d(5px, 0, 0);
 }
 .link--arrowed:hover .arrow-icon--circle {
-    stroke-dashoffset: 0;
+  stroke-dashoffset: 0;
 }
-

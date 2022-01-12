@@ -44,6 +44,20 @@
   align-content: space-between;
 }
 
+.main-icon-1-div {
+  width: 24px;
+  margin-right: 24px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.main-img-1 {
+  display: inline-block;
+  padding: 30px;
+}
+
 /* NAVIGATION */
 
 .nav-menu {
@@ -211,5 +225,22 @@
   }
   .hor__content {
     min-height: 75vh;
+  }
+  .nav-link {
+    display: block;
+    margin-right: 34px;
+    margin-bottom: 18px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .main-icon-1-div {
+    margin-right: 14px;
+  }
+  .main-img-1 {
+    padding-top: 30px;
   }
 }

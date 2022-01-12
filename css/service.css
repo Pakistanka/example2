@@ -1,17 +1,22 @@
-.section.main-3s {
-    padding-bottom: 80px;
-    background-color: #ff6f43;
-    color: #1a1a1a;
-  }
+.service {
+  padding-bottom: 80px;
+  background-color: #ff6f43;
+  color: #1a1a1a;
+}
+.subtitle {
+  margin-bottom: 80px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
 
-  @media screen and (max-width: 991px) {
-    .section.main-3s {
-        padding-top: 64px;
-        padding-bottom: 32px;
-      }
-
-      .section.main-3s.prod {
-        padding-top: 40px;
-        padding-bottom: 40px;
-      }
+@media screen and (max-width: 991px) {
+  .service {
+    padding-top: 64px;
+    padding-bottom: 32px;
   }
+  .subtitle {
+    margin-bottom: 40px;
+  }
+}

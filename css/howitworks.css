@@ -43,42 +43,6 @@
   align-self: auto;
 }
 
-/* .checks__elem:nth-child(2) {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 1 1 45%;
-    -ms-flex: 1 1 45%;
-    flex: 1 1 45%;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-}
-
-.checks__elem:nth-child(3) {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 1 1 45%;
-    -ms-flex: 1 1 45%;
-    flex: 1 1 45%;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-}
-
-.checks__elem:nth-child(4) {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 1 1 45%;
-    -ms-flex: 1 1 45%;
-    flex: 1 1 45%;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-} */
-
 @media screen and (max-width: 991px) {
   .how-it-works {
     padding-bottom: 40px;
@@ -99,5 +63,75 @@
   .checks {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* CONTACTS */
+
+.row4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.col4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 120px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.col4-img {
+  width: 627px;
+  height: 485px;
+  max-width: 50%;
+  margin-left: 43px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-image: url("./../img/main-img-2.svg");
+  background-position: 50% 0%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 991px) {
+  .row4 {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .col4 {
+    padding-bottom: 0px;
+  }
+
+  .col4-img {
+    width: 274px;
+    height: 274px;
+    margin-top: 24px;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    background-size: contain;
   }
 }

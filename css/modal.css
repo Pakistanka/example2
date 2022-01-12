@@ -1,172 +1,178 @@
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 .modal-content {
-    position: relative;
-    background-color: #FFE6D7;
-    margin: auto;
-    padding: 0;
-    border: 5px solid #ff6f43;
-    width: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+  position: relative;
+  background-color: #ffe6d7;
+  margin: auto;
+  padding: 0;
+  border: 5px solid #ff6f43;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
 
-
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
-
 .close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-header {
-    padding: 2px 16px;
-    background-color: #ff6f43;
-    color: white;
+  padding: 2px 16px;
+  background-color: #ff6f43;
+  color: white;
 }
 
 .modal-body {
-    padding: 2px 16px;
+  padding: 2px 16px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-footer {
-    padding: 2px 16px;
-    background-color: #ff6f43;
-    color: white;
+  padding: 2px 16px;
+  background-color: #ff6f43;
+  color: white;
 }
 
 /* FORM */
 
 .contacts-form {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, max-content);
 
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, max-content);
+  grid-template-areas:
+    "textarea"
+    "email"
+    "name"
+    "button-send";
 
-    grid-template-areas:
-      "textarea"
-      "email"
-      "name"
-      "button-send";
-
-    width: 50%;
-    justify-items: center;
-    align-items: stretch;
-    min-height: 400px;
-  }
-
-.form {
-    padding: 30px 40px;
-  }
-  .form-control {
-   margin-bottom: 10px;
-   padding-bottom: 20px;
-   position: relative;
-  }
-  .form-control label {
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  .textarea {
-    width: 100%;
-  }
-  .form-control input {
-    border: 2px solid #f0f0f0;
-    border-radius: 4px;
-    display: block;
-    font-size: 14px;
-    font-family: inherit;
-    padding: 10px;
-
-    width: 100%;
-  }
-  .form-control i {
-    position: absolute;
-    top: 40px;
-    right: 10px;
-    visibility: hidden;
-  }
-  .form-control.success i.fa-check-circle {
-    visibility: visible;
-    color: #2ecc71;
-  }
-  .form-control.error i.fa-exclamation-circle {
-    visibility: visible;
-    color: #e74c3c;
-  }
-  .form-control small {
-    visibility: hidden;
-    position:absolute;
-    bottom: 0;
-    left: 0;
-  }
-  .form-control.error small {
-    visibility: visible;
-    color: #e74c3c;
-  }
-
-  .form-control.success input {
-    border-color: #2ecc71;
-  }
-  .form-control.success error {
-    border-color: #e74c3c;
-  }
-.button-send {
-    background: #ff6f43;
-    border: 1px solid transparent;
-    color: #fff;
-
-    width: 100%;
-    margin: 10px 0;
-    cursor: pointer;
-    text-transform: uppercase;
-
-    min-height: 50px;
-    max-height: 50px;
-    font-weight: 300;
-    font-size: 16px;
-    letter-spacing: 1px;
-    padding: 10px 28px 11px;
-    border-radius: 50px;
-    transition: .5s;
-    width: 300px;
+  width: 50%;
+  justify-items: center;
+  align-items: stretch;
+  min-height: 400px;
 }
 
+.form {
+  padding: 30px 40px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.textarea {
+  width: 100%;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 10px;
 
+  width: 100%;
+}
+.form-control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.success error {
+  border-color: #e74c3c;
+}
+.button-send {
+  background: #ff6f43;
+  border: 1px solid transparent;
+  color: #fff;
+
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  min-height: 50px;
+  max-height: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 28px 11px;
+  border-radius: 50px;
+  transition: 0.5s;
+  width: 300px;
+}
