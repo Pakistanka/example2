@@ -1,214 +1,147 @@
+.card__info {
+  margin: 15px 0px;
+  font-size: 16px;
+}
+
 .cards-row1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: -20px;
-    margin-bottom: -24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -20px;
+  margin-bottom: -24px;
+}
+
+.card-col1 {
+  display: block;
+  width: 33.3%;
+  padding-right: 20px;
+  padding-bottom: 24px;
+}
+
+.card1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /* height: 640px; */
+  max-height: 640px;
+  height: 100%;
+  padding: 32px 32px 72px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #0d0d0d;
+
+  background-position: 0% 100%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  color: #fff;
+}
+
+.card1:hover {
+  background-size: 80%;
+}
+
+.card1._1 {
+  background-image: url("./../img/card-2.svg");
+}
+
+.card1._2 {
+  background-image: url("./../img/card-2.svg");
+}
+
+.card1._3 {
+  background-image: url("./../img/card-1.svg");
+}
+
+.card1._4 {
+  background-image: url("./../img/card-1.svg");
+}
+
+.card__row {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.card__heading {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.card__title {
+  max-width: 205px;
+  font-family: Euclidcirculara, sans-serif;
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 500;
+}
+
+.card__title.ln {
+  display: inline;
+  max-width: 205px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+/* .card__title.ln.fw {
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+} */
+
+
+@media screen and (max-width: 1280px) and (min-width: 992px) {
+  .card__title {
+    font-size: 28px;
+    line-height: 34px;
   }
 
-  /* .cards-row1._2 {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  /* .card1 {
+    height: 44vw;
   } */
+}
 
-  .card-col1 {
-    display: block;
-    width: 33.3%;
-    padding-right: 20px;
-    padding-bottom: 24px;
-  }
-
+@media screen and (max-width: 1200px) {
   .card1 {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 640px;
-    padding: 32px 32px 72px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #0d0d0d;
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60fb52df805b505d04ae073a_card-3.svg");
-    background-position: 0% 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    -webkit-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
-    color: #fff;
+    padding: 12px 32px 2px;
   }
-
-  .card1:hover {
-    background-size: 105%;
-  }
-
-  .card1._2 {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60fb52b2cf69e0cb84a419c6_card-1.svg");
-  }
-
-  /* .card1._2.pagetransition {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60005cd9f1925877ced48822_venture-narrow.svg");
-    background-position: 0% 100%;
-    background-size: 80%;
-  }
-
-  .card1._2.pagetransition:hover {
-    background-size: 90%;
-  } */
-
-  .card1._3 {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60ff3a4ade254ae5a38b7594_card-2.svg");
-  }
-
-  .card1._3.pagetransition {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60005eb8d7ceecc08c407e27_spvs-narrow.svg");
-    background-position: 0% 100%;
-    background-size: 80%;
-  }
-
-  .card1._3.pagetransition:hover {
-    background-size: 90%;
-  }
-
-  .card1.prod {
-    overflow: hidden;
-    height: 464px;
-    padding-bottom: 32px;
+  .card1._1,
+  .card1._3,
+  .card1._2,
+  .card1._4 {
     background-image: none;
   }
-
-  .card1.pagetransition {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60005c27369763073e576e5b_hedge-narrow.svg");
-    background-size: 100%;
+  .cards-row1 {
+    flex-wrap: wrap;
+  }
+  .card-col1 {
+    width: 45%;
   }
 
-  .card1.pagetransition:hover {
-    background-size: 105%;
-  }
-
-  .card1.pagetransition.realestate {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/5f9ab3c24c502bad0c7b8330_Group%20858.png");
-    background-position: 50% 75%;
-    background-size: 450px;
-  }
-
-  .card1._4 {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60ff3a6f890135d3fc2b5734_card-4.svg");
-  }
-
-  .card1._4.pagetransition {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60005eb8dbb99d73e0d09061_property-syndicates-narrow.svg");
-    background-size: 80%;
-  }
-
-  .card1._4.pagetransition:hover {
-    background-size: 90%;
-  }
-
-  .card1.vc-card {
-    height: 580px;
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60dc40194f9857e70bb2db5c_Angel-Trust.svg");
-    background-size: 100%;
-  }
-
-  .card1.vc-card:hover {
-    background-size: 105%;
-  }
-
-  .card1.vc-card.vc2 {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60dc405bc06aa32563767210_Syndicate-LLP.svg");
-  }
-
-  .card1.vc-card.vc3 {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60dc407cf34836790c9a9a50_Co-investment-LP.svg");
-  }
-
-  .card1.fs-card {
-    height: 464px;
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/614d103b1843ee7161fc6c88_Group%205502.svg");
-    background-size: 100%;
-    cursor: default;
-  }
-
-  .card1.fs-card.vc2 {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60dc405bc06aa32563767210_Syndicate-LLP.svg");
-  }
-
-  .card1.fs-card.vc3 {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/60dc407cf34836790c9a9a50_Co-investment-LP.svg");
-  }
-
-  .card1.fs-card.fs2 {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/614d106da54233ca683d79d5_Group%205503.svg");
-  }
-
-  .card1.fs-card.fs3 {
-    background-image: url("https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/614d1088ef6c3f695606127a_Group%205504.svg");
-  }
-
-  .card-heading-row {
-    position: relative;
-    z-index: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-
-  .card-heading {
-    max-width: 205px;
-    font-family: Euclidcirculara, sans-serif;
-    font-size: 35px;
-    line-height: 42px;
-    font-weight: 500;
-  }
-
-  .card-heading.w280 {
-    max-width: 280px;
-  }
-
-  .card-heading.ln {
-    display: inline;
-    max-width: 205px;
-    border-bottom: 3px solid transparent;
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
-  }
-
-  .card-heading.ln.fw {
-    font-size: 48px;
-    line-height: 58px;
-    letter-spacing: -0.02em;
-  }
-
-  .card-num {
-    display: block;
-    overflow: visible;
-    margin-left: 32px;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 600;
-    text-align: right;
-  }
+}

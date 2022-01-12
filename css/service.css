@@ -1,0 +1,17 @@
+.section.main-3s {
+    padding-bottom: 80px;
+    background-color: #ff6f43;
+    color: #1a1a1a;
+  }
+
+  @media screen and (max-width: 991px) {
+    .section.main-3s {
+        padding-top: 64px;
+        padding-bottom: 32px;
+      }
+
+      .section.main-3s.prod {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+  }

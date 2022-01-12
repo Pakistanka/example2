@@ -1,0 +1,13 @@
+{
+  "name": "GMIsoft",
+  "short_name": "GMIsoft",
+  "lang": "en",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "favicon.svg"
+    }
+  ]
+}

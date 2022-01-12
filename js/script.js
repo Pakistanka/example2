@@ -1,4 +1,4 @@
-let modal = document.getElementById('myModal');
+let modal = document.getElementById('modal');
 
 let btns = document.querySelectorAll('.link--js');
 
