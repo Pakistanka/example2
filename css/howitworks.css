@@ -67,7 +67,9 @@
 }
 
 /* CONTACTS */
-
+.contacts {
+  padding-bottom: 0;
+}
 .row4 {
   display: -webkit-box;
   display: -webkit-flex;
