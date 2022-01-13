@@ -244,3 +244,9 @@
     padding-top: 30px;
   }
 }
+
+@media screen and (max-width: 479px) {
+  .burger-checkbox ~ .mobile-navbar__nav {
+    height: 70px;
+  }
+}

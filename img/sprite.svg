@@ -1,4 +1,36 @@
 <svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 18" id="main-ic-1">
+    <rect width="5.18744" height="5.52409" transform="matrix(1 0 0 -1 0.25 17.0581)" fill="#383C40"></rect>
+    <rect width="5.18744" height="5.52409" transform="matrix(1 0 0 -1 3.97363 5.52393)" fill="#383C40"></rect>
+    <rect width="5.18744" height="5.52409" transform="matrix(1 0 0 -1 11.418 16.9365)" fill="#383C40"></rect>
+    <rect width="5.18744" height="5.52409" transform="matrix(1 0 0 -1 15.1387 5.52393)" fill="#383C40"></rect>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 22" id="main-ic-2">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1997 0.5H0.5V21.0697H15.1997V0.5ZM13.497 3.56885H2.20264V5.29419H13.497V3.56885ZM2.20264 6.34473H13.497V8.07007H2.20264V6.34473ZM13.497 9.12207H2.20264V10.8474H13.497V9.12207Z" fill="#383C40"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 17" id="main-ic-3">
+    <path d="M0.25 0.75L4.73816 8.72678L0.25 16.7036V0.75Z" fill="#383C40"></path>
+    <path d="M4.73828 0.75L14.4387 8.72678L4.73828 16.7036V0.75Z" fill="#383C40"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 17" id="main-ic-6">
+    <rect x="0.5" y="0.75" width="6.31574" height="15.9536" fill="#383C40"></rect>
+    <rect x="7.50195" y="0.75" width="6.31574" height="4.80611" fill="#383C40"></rect>
+    <rect x="7.50195" y="6.32373" width="6.31574" height="4.80611" fill="#383C40"></rect>
+    <rect x="7.50195" y="11.8975" width="13.3155" height="4.80611" fill="#383C40"></rect>
+    <rect x="14.501" y="0.75" width="6.31574" height="10.3798" fill="#383C40"></rect>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 18" id="main-ic-4">
+    <rect width="5.18744" height="5.52409" transform="matrix(1 0 0 -1 0.25 17.8081)" fill="#383C40"></rect>
+    <rect width="5.18744" height="5.52409" transform="matrix(1 0 0 -1 3.97363 14.9253)" fill="#383C40"></rect>
+    <rect width="5.18744" height="5.52409" transform="matrix(1 0 0 -1 7.69531 12.041)" fill="#383C40"></rect>
+    <rect width="5.18744" height="5.52409" transform="matrix(1 0 0 -1 11.418 9.1582)" fill="#383C40"></rect>
+    <rect width="5.18744" height="5.52409" transform="matrix(1 0 0 -1 15.1387 6.27393)" fill="#383C40"></rect>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 17" id="main-ic-5">
+    <rect x="0.25" y="0.75" width="9.70045" height="15.9536" fill="#383C40"></rect>
+    <rect x="10.627" y="0.75" width="9.70045" height="10.5056" fill="#383C40"></rect>
+    <rect width="9.70045" height="4.757" transform="matrix(1 0 0 -1 10.627 16.7036)" fill="#383C40"></rect>
+  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="email">
     <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"></path>
   </symbol>

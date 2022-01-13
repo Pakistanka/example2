@@ -152,3 +152,14 @@
     line-height: 34px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .card-col1 {
+    width: 100%;
+  }
+  .card1 {
+    max-height: 503px;
+    height: auto;
+    padding-top: 10px;
+  }
+}
