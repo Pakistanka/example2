@@ -6,6 +6,7 @@
     <title>IT Solutions</title>
 
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="description" content="GMIsoft, IT development, blockchain, audit">
 
     <link href="./css/general.css" rel="stylesheet" type="text/css">
     <link href="./css/header.css" rel="stylesheet" type="text/css">
@@ -35,9 +36,10 @@
 </head>
 
 <body>
+    <noscript>Your browser does not support JavaScript!</noscript>
     <header>
         <div class="desktop-navbar">
-            <nav class="nav-menu">
+            <nav class="nav-menu" role="navigation">
                 <ul class="nav-menu-row">
                     <li><a href="#about" class="nav-link">About us</a></li>
                     <li><a href="#service" class="nav-link">Service</a></li>
@@ -48,7 +50,7 @@
         </div>
 
         <div class="mobile-navbar">
-            <input id="burger" type="checkbox" class="burger-checkbox" />
+            <input id="burger" type="checkbox" class="burger-checkbox" role="checkbox" aria-checked="mixed" aria-label="input"/>
 
             <label class="burger-label" for="burger">
                 <span></span>
@@ -56,7 +58,7 @@
                 <span></span>
             </label>
 
-            <nav class="mobile-navbar__nav">
+            <nav class="mobile-navbar__nav" role="navigation">
                 <ul>
                     <li><a href="#about" class="nav-link">About us</a></li>
                     <li><a href="#service" class="nav-link">Service</a></li>
@@ -67,7 +69,7 @@
         </div>
     </header>
 
-    <main>
+    <main role="main">
         <section class="section intro hor">
             <div class="container hor">
                 <div class="hor__content">
@@ -446,22 +448,23 @@
             </div>
             <div class="modal-body">
 
-                <form action="" method="get" class="contacts-form" id="form">
+                <form action="" method="get" class="contacts-form" id="form" role="form">
                     <div class="form-control">
-                        <textarea name="" id="textarea" cols="30" rows="10" placeholder="Message" class="textarea"></textarea>
+                        <textarea name="" id="textarea" cols="30" rows="10" placeholder="Message" class="textarea"
+                        data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false"></textarea>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
                         <label for="username" class="name">Username</label>
-                        <input type="text" placeholder="Enter your name..." id="username" class="input name">
+                        <input type="text" placeholder="Enter your name..." id="username" class="input name" aria-autocomplete="list">
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
                         <label for="email" class="email">Email</label>
-                        <input type="email" placeholder="Enter your email..." id="email" class="input email">
+                        <input type="email" placeholder="Enter your email..." id="email" class="input email" aria-autocomplete="list">
                         <small>Error message</small>
                     </div>
-                    <button type="submit" class="button">Submit</button>
+                    <button type="submit" class="button" role="option" aria-selected="true">Submit</button>
                 </form>
 
             </div>
@@ -473,7 +476,6 @@
     </div>
 
     <script src="./js/script.js"></script>
-
 </body>
 
 </html>
