@@ -4,6 +4,8 @@ let modal = document.getElementById('modal');
 let btns = document.querySelectorAll('.link--js');
 let span = document.getElementsByClassName("close")[0];
 
+console.log(span);
+
 btns.forEach(btn => {
     btn.addEventListener('click', () => modal.style.display = "block");
 });

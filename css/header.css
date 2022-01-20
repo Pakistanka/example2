@@ -4,6 +4,8 @@
 
 .gray-text {
   color: #888;
+  font-size: 30px;
+  line-height: 32px;
 }
 .w720 {
   max-width: 720px;
@@ -104,10 +106,15 @@
   color: #ff6f43;
 }
 
+.header__logo {
+  padding-left: 60px;
+}
+
 /* MOBILE NAVBAR */
 
 .desktop-navbar {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .mobile-navbar {
   display: none;
