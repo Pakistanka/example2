@@ -27,7 +27,7 @@
   display: flex;
   max-height: 640px;
   height: 100%;
-  padding: 32px 32px 72px;
+  padding: 32px 32px 42px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -36,7 +36,7 @@
   background-color: #0d0d0d;
 
   background-position: 0% 100%;
-  background-size: 60%;
+  background-size: 100%;
   background-repeat: no-repeat;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
@@ -44,23 +44,23 @@
 }
 
 .card1:hover {
-  background-size: 80%;
+  background-size: 120%;
 }
 
 .card1._1 {
-  background-image: url("./../img/card-2.svg");
+  background-image: url("./../img/pic-1.svg");
 }
 
 .card1._2 {
-  background-image: url("./../img/card-2.svg");
+  background-image: url("./../img/pic-2.svg");
 }
 
 .card1._3 {
-  background-image: url("./../img/card-1.svg");
+  background-image: url("./../img/pic-3.svg");
 }
 
 .card1._4 {
-  background-image: url("./../img/card-1.svg");
+  background-image: url("./../img/pic-4.svg");
 }
 
 .card__row {
