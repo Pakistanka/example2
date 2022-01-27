@@ -119,18 +119,10 @@
 .mobile-navbar {
   display: none;
 }
-@media all and (max-width: 1024px) {
-  .mobile-navbar {
-    display: block;
-  }
-  .desktop-navbar {
-    display: none;
-  }
-}
 
 .burger-checkbox + .burger-label {
   position: fixed;
-  top: 40px;
+  top: 25px;
   right: 40px;
   height: 20px;
   width: 15px;
@@ -218,6 +210,9 @@
 }
 
 @media screen and (max-width: 991px) {
+  .nav-menu-row {
+    width: 90%;
+  }
   .w720 {
     max-width: 500px;
   }
@@ -249,6 +244,15 @@
   }
   .main-img-1 {
     padding-top: 30px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .mobile-navbar {
+    display: block;
+  }
+  .desktop-navbar {
+    display: none;
   }
 }
 

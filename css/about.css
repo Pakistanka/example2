@@ -188,4 +188,7 @@
     padding-right: 0px;
     padding-bottom: 24px;
   }
+  .row1.v2 {
+    flex-direction: column;
+  }
 }
