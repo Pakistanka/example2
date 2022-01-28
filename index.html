@@ -37,36 +37,30 @@
 
 <body>
     <noscript>Your browser does not support JavaScript!</noscript>
-    <header>
-        <div class="desktop-navbar">
-            <img src="./img/logo.svg" alt="Logo" width="60" height="60" class="header__logo">
-            <nav class="nav-menu" role="navigation">
-                <ul class="nav-menu-row">
-                    <li><a href="#about" class="nav-link">About us</a></li>
-                    <li><a href="#service" class="nav-link">Service</a></li>
-                    <li><a href="#howdoesitwork" class="nav-link">How does it work?</a></li>
-                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="mobile-navbar">
-            <input id="burger" type="checkbox" class="burger-checkbox" role="checkbox" aria-checked="mixed" aria-label="input"/>
-
-            <label class="burger-label" for="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-
-            <nav class="mobile-navbar__nav" role="navigation">
-                <ul>
-                    <li><a href="#about" class="nav-link">About us</a></li>
-                    <li><a href="#service" class="nav-link">Service</a></li>
-                    <li><a href="#howdoesitwork" class="nav-link">How does it work?</a></li>
-                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="header__container">
+            <a href="/"><img src="./img/logo.svg" alt="Logo" width="60" height="60" class="header__logo"></a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav data-sub_menu_auto_close="true" class="menu__body">
+                    <ul class="menu__list">
+                        <li>
+                            <a data-goto=".page__section_1" href="" class="menu__link">About us</a>
+                        </li>
+                        <li>
+                            <a data-goto=".page__section_2" href="" class="menu__link">Services</a>
+                        </li>
+                        <li>
+                            <a data-goto=".page__section_3" href="" class="menu__link">How does it work?</a>
+                        </li>
+                        <li>
+                            <a data-goto=".page__section_4" href="" class="menu__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -105,7 +99,7 @@
             </div>
         </section>
 
-        <section class="section about" id="about">
+        <section class="section about page__section_1">
             <div class="container">
                 <div class="row1 v2">
                     <div class="col1 hd v2">
@@ -216,7 +210,7 @@
             </div>
         </section>
 
-        <section class="section service" id="service">
+        <section class="section service page__section_2">
             <div class="container">
                 <div class="slide-in">
                     <h2 class="h2">Services</h2>
@@ -286,7 +280,7 @@
             <div class="gray-bg"></div>
         </section>
 
-        <section class="section how-it-works" id="howdoesitwork">
+        <section class="section how-it-works page__section_3">
             <div class="container">
                 <div class="slide-in">
                     <h2 class="h2">How does it work?</h2>
@@ -353,7 +347,7 @@
             </div>
         </section>
 
-        <section class="section contacts" id="contacts">
+        <section class="section contacts page__section_4">
             <div class="container">
                 <div class="row4">
                     <div class="col4">
