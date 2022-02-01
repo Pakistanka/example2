@@ -66,8 +66,8 @@
   background-color: #000;
 }
 .header__container {
-  padding: 0 30px;
-  max-width: 1200px;
+  padding: 0 60px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -77,8 +77,9 @@
 .header__logo {
   position: relative;
   z-index: 5;
-  width: 40px;
-  height: 40px;
+  width: 120px;
+  height: 120px;
+  padding-top: 10px;
 }
 .menu__icon {
   display: none;
@@ -212,6 +213,9 @@ body._touch .menu__link {
 }
 
 @media screen and (max-width: 991px) {
+  .nav-menu-row {
+    width: 90%;
+  }
   .w720 {
     max-width: 500px;
   }
@@ -232,5 +236,8 @@ body._touch .menu__link {
   }
   .main-img-1 {
     padding-top: 30px;
+  }
+  .header__container {
+    padding: 0 40px;
   }
 }

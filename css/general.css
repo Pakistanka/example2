@@ -11,6 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  margin-top: 40px;
+}
+
 h1 {
   margin-top: 0px;
   margin-bottom: 32px;
@@ -159,7 +163,9 @@ li {
     font-size: 15px;
     line-height: 21px;
   }
-
+  main {
+    margin-top: 120px;
+  }
   h2 {
     font-size: 35px;
     line-height: 42px;
