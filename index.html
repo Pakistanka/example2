@@ -8,20 +8,6 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta name="description" content="GMIsoft, IT development, blockchain, audit">
 
-    <?php
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-
-        $mes = "Name: $name \nE-mail: $email \nText: $message";
-
-        $send = mail(info@gmisoft.net, $mes, "Content-type:text/plain; charset = UTF-8\r\nFrom:$email");
-
-        if ($send == 'true') {echo "Сообщение отправлено";}
-        else {echo "Ой, что-то пошло не так";}
-    ?>
-
-
     <link href="./css/general.css" rel="stylesheet" type="text/css">
     <link href="./css/header.css" rel="stylesheet" type="text/css">
     <link href="./css/links.css" rel="stylesheet" type="text/css">
@@ -414,9 +400,9 @@
                         </div>
                         <div class="ft-menu-col">
                             <div class="ft-heading">Contacts</div>
-                            <a href="mailto:" class="ft-link pagetransition"> Email
+                            <a href="mailto:info@gmisoft.net" class="ft-link pagetransition"> Email
                                 <svg class="icon twitter" width="20" height="20">
-                                    <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                                    <use xlink:href="./img/sprite.svg#email"></use>
                                 </svg>
                             </a>
                         </div>
@@ -441,7 +427,7 @@
             </div>
             <div class="modal-body">
 
-                <form action="send.php" method="post" class="contacts-form" id="form" role="form">
+                <form action="https://formspree.io/f/xnqwpdyl" method="POST" class="contacts-form" id="form" role="form">
                     <div class="form-control">
                         <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Message" class="textarea"
                         data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false"></textarea>
@@ -449,12 +435,12 @@
                     </div>
                     <div class="form-control">
                         <label for="username" class="name">Name</label>
-                        <input type="text" placeholder="Enter your name..." id="username" class="input name" aria-autocomplete="list">
+                        <input type="text" name="Name" placeholder="Enter your name..." id="username" class="input name" aria-autocomplete="list">
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
                         <label for="email" class="email">Email</label>
-                        <input type="email" placeholder="Enter your email..." id="email" class="input email" aria-autocomplete="list">
+                        <input type="email" name="_replyto" placeholder="Enter your email..." id="email" class="input email" aria-autocomplete="list">
                         <small>Error message</small>
                     </div>
                     <button type="submit" class="button" role="option" aria-selected="true">Submit</button>
