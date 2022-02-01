@@ -8,6 +8,20 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta name="description" content="GMIsoft, IT development, blockchain, audit">
 
+    <?php
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+
+        $mes = "Name: $name \nE-mail: $email \nText: $message";
+
+        $send = mail(info@gmisoft.net, $mes, "Content-type:text/plain; charset = UTF-8\r\nFrom:$email");
+
+        if ($send == 'true') {echo "Сообщение отправлено";}
+        else {echo "Ой, что-то пошло не так";}
+    ?>
+
+
     <link href="./css/general.css" rel="stylesheet" type="text/css">
     <link href="./css/header.css" rel="stylesheet" type="text/css">
     <link href="./css/links.css" rel="stylesheet" type="text/css">
@@ -427,9 +441,9 @@
             </div>
             <div class="modal-body">
 
-                <form action="" method="get" class="contacts-form" id="form" role="form">
+                <form action="send.php" method="post" class="contacts-form" id="form" role="form">
                     <div class="form-control">
-                        <textarea name="" id="textarea" cols="30" rows="10" placeholder="Message" class="textarea"
+                        <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Message" class="textarea"
                         data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false"></textarea>
                         <small>Error message</small>
                     </div>
