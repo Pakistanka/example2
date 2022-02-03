@@ -88,11 +88,11 @@
 
                     </div>
                     <div class="image-scroller">
+                        <div style="width: 100%; height: 1px;" class="line-main"></div>
                         <div class="image-container">
-                            <div style="width: 100%; height: 1px;" class="line-main"></div>
                             <img src="./img/Main-Image-process.svg" alt="GMIsoft services" class="main-img-1">
-                            <div style="width: 100%; height: 1px;" class="line-main">
-                            </div>
+                        </div>
+                        <div style="width: 100%; height: 1px;" class="line-main"></div>
                         </div>
                     </div>
                 </div>
@@ -392,11 +392,6 @@
 
                 <div class="ft-col _2">
                     <div class="ft-menu-row">
-
-                        <div class="ft-menu-col">
-                            <div class="ft-heading">About us</div>
-                            <a href="#about" class="ft-link pagetransition">About us</a>
-                        </div>
                         <div class="ft-menu-col">
                             <div class="ft-heading">Contacts</div>
                             <a href="mailto:info@gmisoft.net" class="ft-link pagetransition"> Email
@@ -411,8 +406,10 @@
             </div>
             <div class="ft-row _2">
                 <div class="ft-col">
+                    <p class="ft-text w367">GMI SOFT LIMITED  Kadmou, 4 Agios Andreas, 1105, Nicosia, Cyprus</p>
                     <p class="ft-text w367">© GMI Software 2022</p>
                 </div>
+                <div class="ft-col"></div>
             </div>
         </div>
     </footer>
@@ -454,6 +451,20 @@
     </div> -->
 
     <script src="./js/script.js"></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
 </body>
 
 </html>

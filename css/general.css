@@ -12,7 +12,8 @@ body {
 }
 
 main {
-  margin-top: 40px;
+  /* margin-top: 60px; */
+  margin-top: calc(100px + 0%);
 }
 
 h1 {
@@ -89,6 +90,21 @@ li {
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
+
+}
+
+.image-container {
+  overflow: scroll;
+  -ms-overflow-style: none;
+      scrollbar-width: none;
+  /* width: fit-content; */
+}
+.image-container::-webkit-scrollbar { width: 0; height: 0; }
+
+@media screen and (min-width: 1024px) {
+  .main-img-1 {
+    width: 90%;
+  }
 }
 
 .container {
@@ -162,9 +178,6 @@ li {
   body {
     font-size: 15px;
     line-height: 21px;
-  }
-  main {
-    margin-top: 120px;
   }
   h2 {
     font-size: 35px;
